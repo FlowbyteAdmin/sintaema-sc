@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assessoria Jurídica do SINTAEMA/SC - Defesa dos direitos dos trabalhadores">
+    <title>Assessoria Jurídica - SINTAEMA/SC</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="flex justify-between items-center">
+                    <div class="flex gap-4 items-center">
+                        <a href="tel:+554832243868" class="flex items-center gap-2">
+                            <i class="fas fa-phone"></i>
+                            <span>(48) 3224-3868</span>
+                        </a>
+                        <a href="mailto:secretaria@sintaema.org.br" class="flex items-center gap-2">
+                            <i class="fas fa-envelope"></i>
+                            <span class="hidden-mobile">secretaria@sintaema.org.br</span>
+                        </a>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/sintaema_sc" target="_blank" rel="noopener"
+                            aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com.br/sintaema1" target="_blank" rel="noopener"
+                            aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="container">
+                <div class="flex justify-between items-center">
+                    <div class="logo">
+                        <a href="index.html">SINTAEMA/SC</a>
+                    </div>
+
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+                    <nav>
+                        <ul class="nav-menu" id="navMenu">
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="sobre.html">Sobre</a></li>
+                            <li><a href="juridico.html" class="active">Jurídico</a></li>
+                            <li><a href="noticias.html">Notícias</a></li>
+                            <li><a href="midia.html">Mídia</a></li>
+                            <li><a href="campanhas.html">Campanhas</a></li>
+                            <li><a href="financas.html">Finanças</a></li>
+                            <li><a href="filiacao.html">Filie-se</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 4rem 0;">
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title" style="font-size: 2.5rem;">Assessoria Jurídica</h1>
+                <p class="hero-subtitle">Defesa dos direitos dos trabalhadores em água, esgoto e meio ambiente</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section section-bg-white">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Serviços</h2>
+                <p class="section-subtitle">A assessoria jurídica do SINTAEMA está à disposição dos filiados</p>
+            </div>
+
+            <div class="grid grid-cols-3">
+                <!-- Service 1 -->
+                <div class="card">
+                    <div class="card-content text-center">
+                        <i class="fas fa-balance-scale"
+                            style="font-size: 3rem; color: var(--color-primary); margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">Processos Trabalhistas</h3>
+                        <p class="card-text">
+                            Acompanhamento e defesa em ações trabalhistas, garantindo seus direitos perante a Justiça do
+                            Trabalho.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="card">
+                    <div class="card-content text-center">
+                        <i class="fas fa-file-contract"
+                            style="font-size: 3rem; color: var(--color-primary); margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">Orientação Jurídica</h3>
+                        <p class="card-text">
+                            Esclarecimento de dúvidas sobre direitos trabalhistas, contratos e legislação do setor.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="card">
+                    <div class="card-content text-center">
+                        <i class="fas fa-handshake"
+                            style="font-size: 3rem; color: var(--color-primary); margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">Negociações Coletivas</h3>
+                        <p class="card-text">
+                            Assessoria em acordos e convenções coletivas de trabalho, garantindo melhores condições.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="card">
+                    <div class="card-content text-center">
+                        <i class="fas fa-shield-alt"
+                            style="font-size: 3rem; color: var(--color-primary); margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">Defesa em Processos Administrativos</h3>
+                        <p class="card-text">
+                            Representação em processos administrativos e disciplinares junto aos empregadores.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="card">
+                    <div class="card-content text-center">
+                        <i class="fas fa-gavel"
+                            style="font-size: 3rem; color: var(--color-primary); margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">Ações Coletivas</h3>
+                        <p class="card-text">
+                            Defesa de interesses coletivos da categoria através de ações judiciais.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="card">
+                    <div class="card-content text-center">
+                        <i class="fas fa-users"
+                            style="font-size: 3rem; color: var(--color-primary); margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">Atendimento Personalizado</h3>
+                        <p class="card-text">
+                            Atendimento individual para análise de casos específicos e orientação jurídica.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="section section-bg-gray">
+        <div class="container">
+            <div class="grid grid-cols-2">
+                <!-- Schedule Info -->
+                <div class="card">
+                    <div class="card-content">
+                        <h3 style="margin-bottom: 1.5rem; color: var(--color-primary-dark);">
+                            <i class="fas fa-calendar-check"></i> Plantão dos Advogados
+                        </h3>
+
+                        <div style="margin-bottom: 2rem;">
+                            <h4 style="color: var(--color-primary); margin-bottom: 1rem;">Horários de Atendimento</h4>
+                            <div
+                                style="background: var(--color-gray-50); padding: 1.5rem; border-radius: 0.5rem; border-left: 4px solid var(--color-primary);">
+                                <p style="font-size: 1.125rem; margin-bottom: 0.5rem;">
+                                    <i class="fas fa-clock"></i> <strong>Segundas e Quartas-feiras</strong>
+                                </p>
+                                <p style="font-size: 1.25rem; font-weight: 600; color: var(--color-primary);">
+                                    14h às 17h
+                                </p>
+                                <p style="font-size: 0.875rem; color: var(--color-gray-600); margin-top: 0.5rem;">
+                                    <i class="fas fa-info-circle"></i> Atendimento mediante agendamento
+                                </p>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 2rem;">
+                            <h4 style="color: var(--color-primary); margin-bottom: 1rem;">Local</h4>
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i> Sede do SINTAEMA/SC<br>
+                                Av. Mauro Ramos, 502 - Centro<br>
+                                Florianópolis/SC - CEP: 88020-301
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 style="color: var(--color-primary); margin-bottom: 1rem;">Como Agendar</h4>
+                            <p style="margin-bottom: 1rem;">
+                                Para agendar seu atendimento, entre em contato:
+                            </p>
+                            <ul style="list-style: none; padding-left: 0;">
+                                <li style="margin-bottom: 0.5rem;">
+                                    <i class="fas fa-phone"></i> <strong>Telefone:</strong> (48) 3224-3868
+                                </li>
+                                <li>
+                                    <i class="fas fa-envelope"></i> <strong>E-mail:</strong> juridico@sintaema.org.br
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Required Documents -->
+                <div class="card">
+                    <div class="card-content">
+                        <h3 style="margin-bottom: 1.5rem; color: var(--color-primary-dark);">
+                            <i class="fas fa-file-alt"></i> Documentos Necessários
+                        </h3>
+
+                        <p style="margin-bottom: 1.5rem;">
+                            Para um atendimento mais eficiente, traga os seguintes documentos:
+                        </p>
+
+                        <div style="background: var(--color-gray-50); padding: 1.5rem; border-radius: 0.5rem;">
+                            <h4 style="color: var(--color-primary); margin-bottom: 1rem;">Documentos Pessoais</h4>
+                            <ul style="list-style: none; padding-left: 0;">
+                                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--color-gray-200);">
+                                    <i class="fas fa-check" style="color: var(--color-success);"></i> RG e CPF
+                                </li>
+                                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--color-gray-200);">
+                                    <i class="fas fa-check" style="color: var(--color-success);"></i> Comprovante de
+                                    residência
+                                </li>
+                                <li style="padding: 0.5rem 0;">
+                                    <i class="fas fa-check" style="color: var(--color-success);"></i> Carteira de
+                                    trabalho
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            style="background: var(--color-gray-50); padding: 1.5rem; border-radius: 0.5rem; margin-top: 1rem;">
+                            <h4 style="color: var(--color-primary); margin-bottom: 1rem;">Documentos Trabalhistas</h4>
+                            <ul style="list-style: none; padding-left: 0;">
+                                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--color-gray-200);">
+                                    <i class="fas fa-check" style="color: var(--color-success);"></i> Contracheques
+                                    (últimos 3 meses)
+                                </li>
+                                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--color-gray-200);">
+                                    <i class="fas fa-check" style="color: var(--color-success);"></i> Contrato de
+                                    trabalho (se houver)
+                                </li>
+                                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--color-gray-200);">
+                                    <i class="fas fa-check" style="color: var(--color-success);"></i> Documentos
+                                    relacionados ao caso
+                                </li>
+                                <li style="padding: 0.5rem 0;">
+                                    <i class="fas fa-check" style="color: var(--color-success);"></i> Correspondências
+                                    da empresa
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            style="margin-top: 1.5rem; padding: 1rem; background: var(--color-primary-light); border-radius: 0.5rem;">
+                            <p style="font-size: 0.875rem; margin: 0;">
+                                <i class="fas fa-info-circle"></i> <strong>Importante:</strong> Traga cópias e originais
+                                de todos os documentos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Law Firms Section -->
+    <section class="section section-bg-white">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Escritórios Conveniados</h2>
+                <p class="section-subtitle">Parceiros que prestam assessoria jurídica aos filiados do SINTAEMA</p>
+            </div>
+
+            <div class="grid grid-cols-2">
+                <!-- Law Firm 1 -->
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="card-title">
+                            <i class="fas fa-building"></i> Escritório Advocacia 1
+                        </h3>
+                        <p style="color: var(--color-gray-600); margin-bottom: 1rem;">
+                            Especializado em Direito Trabalhista e Previdenciário
+                        </p>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;">
+                                <i class="fas fa-map-marker-alt"></i> Endereço: Rua Exemplo, 123 - Centro,
+                                Florianópolis/SC
+                            </li>
+                            <li style="margin-bottom: 0.5rem;">
+                                <i class="fas fa-phone"></i> Telefone: (48) 3333-4444
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i> E-mail: contato@escritorio1.com.br
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Law Firm 2 -->
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="card-title">
+                            <i class="fas fa-building"></i> Escritório Advocacia 2
+                        </h3>
+                        <p style="color: var(--color-gray-600); margin-bottom: 1rem;">
+                            Especializado em Direito do Trabalho e Sindical
+                        </p>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;">
+                                <i class="fas fa-map-marker-alt"></i> Endereço: Av. Exemplo, 456 - Centro,
+                                Florianópolis/SC
+                            </li>
+                            <li style="margin-bottom: 0.5rem;">
+                                <i class="fas fa-phone"></i> Telefone: (48) 3555-6666
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i> E-mail: contato@escritorio2.com.br
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents Section -->
+    <section class="section section-bg-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Documentos e Informações</h2>
+                <p class="section-subtitle">Acesse documentos importantes e informações jurídicas</p>
+            </div>
+
+            <div class="grid grid-cols-3">
+                <!-- Document 1 -->
+                <div class="card">
+                    <div class="card-content text-center">
+                        <i class="fas fa-file-pdf"
+                            style="font-size: 3rem; color: var(--color-accent); margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">Convenção Coletiva</h3>
+                        <p class="card-text">Baixe a convenção coletiva de trabalho vigente</p>
+                        <a href="documents/convencao-coletiva.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i> Baixar PDF
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Document 2 -->
+                <div class="card">
+                    <div class="card-content text-center">
+                        <i class="fas fa-file-pdf"
+                            style="font-size: 3rem; color: var(--color-accent); margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">Cartilha de Direitos</h3>
+                        <p class="card-text">Conheça seus direitos como trabalhador</p>
+                        <a href="documents/cartilha-direitos.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i> Baixar PDF
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Document 3 -->
+                <div class="card">
+                    <div class="card-content text-center">
+                        <i class="fas fa-file-pdf"
+                            style="font-size: 3rem; color: var(--color-accent); margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">Notícias Jurídicas</h3>
+                        <p class="card-text">Acompanhe as últimas notícias jurídicas</p>
+                        <a href="noticias.html" class="btn btn-primary">
+                            <i class="fas fa-newspaper"></i> Ver Notícias
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section-bg-white">
+        <div class="container">
+            <div class="card"
+                style="background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary)); color: white;">
+                <div class="card-content text-center">
+                    <h2 style="color: white; margin-bottom: 1rem;">
+                        <i class="fas fa-question-circle"></i> Precisa de Ajuda Jurídica?
+                    </h2>
+                    <p style="font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.95;">
+                        Nossa assessoria jurídica está pronta para defender seus direitos. Agende seu atendimento!
+                    </p>
+                    <div class="flex gap-4 justify-center">
+                        <a href="contato.html" class="btn btn-accent btn-lg">
+                            <i class="fas fa-calendar-check"></i> Agendar Atendimento
+                        </a>
+                        <a href="tel:+554832243868" class="btn btn-secondary btn-lg">
+                            <i class="fas fa-phone"></i> Ligar Agora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SINTAEMA/SC</h3>
+                    <p>Sindicato dos Trabalhadores em Água, Esgoto e Meio Ambiente de Santa Catarina</p>
+                    <p style="margin-top: 1rem; font-style: italic;">"Água é vida, privatizá-la é crime"</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Mauro Ramos, 502 - Centro</li>
+                        <li>Florianópolis/SC - CEP: 88020-301</li>
+                        <li><i class="fas fa-phone"></i> (48) 3224-3868</li>
+                        <li><i class="fas fa-envelope"></i> secretaria@sintaema.org.br</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Horários de Atendimento</h3>
+                    <ul>
+                        <li><strong>Sindicato:</strong></li>
+                        <li>Segunda a Sexta</li>
+                        <li>8h às 12h - 14h às 18h</li>
+                        <li style="margin-top: 1rem;"><strong>Plantão Advogados:</strong></li>
+                        <li>Segundas e Quartas, 14h às 17h</li>
+                        <li>(mediante agendamento)</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="sobre.html">Sobre o SINTAEMA</a></li>
+                        <li><a href="juridico.html">Assessoria Jurídica</a></li>
+                        <li><a href="filiacao.html">Filie-se</a></li>
+                        <li><a href="financas.html">Prestação de Contas</a></li>
+                        <li><a href="campanhas.html">Campanhas Salariais</a></li>
+                        <li><a href="contato.html">Fale Conosco</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/sintaema_sc" target="_blank" rel="noopener" class="social-link"
+                    aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com.br/sintaema1" target="_blank" rel="noopener" class="social-link"
+                    aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 SINTAEMA/SC - Todos os direitos reservados</p>
+                <p>CNPJ: 83.566.729/0001-57</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

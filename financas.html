@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Prestação de Contas do SINTAEMA/SC - Transparência e responsabilidade com os recursos do sindicato">
+    <title>Finanças - SINTAEMA/SC</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="flex justify-between items-center">
+                    <div class="flex gap-4 items-center">
+                        <a href="tel:+554832243868" class="flex items-center gap-2">
+                            <i class="fas fa-phone"></i>
+                            <span>(48) 3224-3868</span>
+                        </a>
+                        <a href="mailto:secretaria@sintaema.org.br" class="flex items-center gap-2">
+                            <i class="fas fa-envelope"></i>
+                            <span class="hidden-mobile">secretaria@sintaema.org.br</span>
+                        </a>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/sintaema_sc" target="_blank" rel="noopener"
+                            aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com.br/sintaema1" target="_blank" rel="noopener"
+                            aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="container">
+                <div class="flex justify-between items-center">
+                    <div class="logo">
+                        <a href="index.html">SINTAEMA/SC</a>
+                    </div>
+
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+                    <nav>
+                        <ul class="nav-menu" id="navMenu">
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="sobre.html">Sobre</a></li>
+                            <li><a href="juridico.html">Jurídico</a></li>
+                            <li><a href="noticias.html">Notícias</a></li>
+                            <li><a href="midia.html">Mídia</a></li>
+                            <li><a href="campanhas.html">Campanhas</a></li>
+                            <li><a href="financas.html" class="active">Finanças</a></li>
+                            <li><a href="filiacao.html">Filie-se</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 4rem 0;">
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title" style="font-size: 2.5rem;">Prestação de Contas</h1>
+                <p class="hero-subtitle">Transparência e responsabilidade com os recursos do sindicato</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparency Message -->
+    <section class="section section-bg-white">
+        <div class="container">
+            <div class="card"
+                style="background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary)); color: white;">
+                <div class="card-content text-center">
+                    <i class="fas fa-shield-alt" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                    <h2 style="color: white; margin-bottom: 1rem;">Compromisso com a Transparência</h2>
+                    <p style="font-size: 1.125rem; opacity: 0.95; max-width: 800px; margin: 0 auto;">
+                        O SINTAEMA/SC preza pela transparência total na gestão dos recursos. Todos os documentos
+                        financeiros estão disponíveis para consulta dos filiados, demonstrando nosso compromisso
+                        com a prestação de contas e a gestão responsável.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Reports Section -->
+    <section class="section section-bg-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Relatórios Financeiros</h2>
+                <p class="section-subtitle">Acesse os balanços e demonstrativos financeiros</p>
+            </div>
+
+            <div class="grid grid-cols-3">
+                <!-- Report 2025 -->
+                <div class="card">
+                    <div class="card-content text-center">
+                        <i class="fas fa-file-invoice-dollar"
+                            style="font-size: 3rem; color: var(--color-success); margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">Balanço 2025</h3>
+                        <p class="card-text">Demonstrativo financeiro completo do exercício de 2025</p>
+                        <span class="badge badge-success" style="margin-bottom: 1rem;">Aprovado em Assembleia</span>
+                        <br>
+                        <a href="documents/balanco-2025.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i> Baixar PDF
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Report 2024 -->
+                <div class="card">
+                    <div class="card-content text-center">
+                        <i class="fas fa-file-invoice-dollar"
+                            style="font-size: 3rem; color: var(--color-primary); margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">Balanço 2024</h3>
+                        <p class="card-text">Demonstrativo financeiro completo do exercício de 2024</p>
+                        <span class="badge badge-primary" style="margin-bottom: 1rem;">Aprovado em Assembleia</span>
+                        <br>
+                        <a href="documents/balanco-2024.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i> Baixar PDF
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Report 2023 -->
+                <div class="card">
+                    <div class="card-content text-center">
+                        <i class="fas fa-file-invoice-dollar"
+                            style="font-size: 3rem; color: var(--color-gray-400); margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">Balanço 2023</h3>
+                        <p class="card-text">Demonstrativo financeiro completo do exercício de 2023</p>
+                        <span class="badge badge-gray" style="margin-bottom: 1rem;">Histórico</span>
+                        <br>
+                        <a href="documents/balanco-2023.pdf" class="btn btn-secondary" download>
+                            <i class="fas fa-download"></i> Baixar PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Summary Section -->
+    <section class="section section-bg-white">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Resumo Financeiro 2025</h2>
+                <p class="section-subtitle">Principais números do último exercício</p>
+            </div>
+
+            <div class="grid grid-cols-4">
+                <!-- Metric 1 -->
+                <div class="card text-center">
+                    <div class="card-content">
+                        <i class="fas fa-arrow-up"
+                            style="font-size: 2rem; color: var(--color-success); margin-bottom: 0.5rem;"></i>
+                        <h3 style="font-size: 2rem; color: var(--color-primary); margin-bottom: 0.5rem;">R$ 1.2M</h3>
+                        <p style="color: var(--color-gray-600);">Receitas</p>
+                    </div>
+                </div>
+
+                <!-- Metric 2 -->
+                <div class="card text-center">
+                    <div class="card-content">
+                        <i class="fas fa-arrow-down"
+                            style="font-size: 2rem; color: var(--color-accent); margin-bottom: 0.5rem;"></i>
+                        <h3 style="font-size: 2rem; color: var(--color-primary); margin-bottom: 0.5rem;">R$ 980K</h3>
+                        <p style="color: var(--color-gray-600);">Despesas</p>
+                    </div>
+                </div>
+
+                <!-- Metric 3 -->
+                <div class="card text-center">
+                    <div class="card-content">
+                        <i class="fas fa-chart-line"
+                            style="font-size: 2rem; color: var(--color-success); margin-bottom: 0.5rem;"></i>
+                        <h3 style="font-size: 2rem; color: var(--color-success); margin-bottom: 0.5rem;">R$ 220K</h3>
+                        <p style="color: var(--color-gray-600);">Superávit</p>
+                    </div>
+                </div>
+
+                <!-- Metric 4 -->
+                <div class="card text-center">
+                    <div class="card-content">
+                        <i class="fas fa-users"
+                            style="font-size: 2rem; color: var(--color-primary); margin-bottom: 0.5rem;"></i>
+                        <h3 style="font-size: 2rem; color: var(--color-primary); margin-bottom: 0.5rem;">1,850</h3>
+                        <p style="color: var(--color-gray-600);">Filiados</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expense Breakdown -->
+            <div style="margin-top: 3rem;">
+                <h3 style="text-align: center; margin-bottom: 2rem; color: var(--color-primary-dark);">
+                    Distribuição de Despesas 2025
+                </h3>
+                <div class="grid grid-cols-3">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="flex justify-between items-center" style="margin-bottom: 0.5rem;">
+                                <span><i class="fas fa-gavel"></i> Assessoria Jurídica</span>
+                                <strong>35%</strong>
+                            </div>
+                            <div
+                                style="background: var(--color-gray-200); height: 8px; border-radius: 4px; overflow: hidden;">
+                                <div style="background: var(--color-primary); width: 35%; height: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="flex justify-between items-center" style="margin-bottom: 0.5rem;">
+                                <span><i class="fas fa-building"></i> Manutenção da Sede</span>
+                                <strong>25%</strong>
+                            </div>
+                            <div
+                                style="background: var(--color-gray-200); height: 8px; border-radius: 4px; overflow: hidden;">
+                                <div style="background: var(--color-primary); width: 25%; height: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="flex justify-between items-center" style="margin-bottom: 0.5rem;">
+                                <span><i class="fas fa-users-cog"></i> Pessoal</span>
+                                <strong>20%</strong>
+                            </div>
+                            <div
+                                style="background: var(--color-gray-200); height: 8px; border-radius: 4px; overflow: hidden;">
+                                <div style="background: var(--color-primary); width: 20%; height: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="flex justify-between items-center" style="margin-bottom: 0.5rem;">
+                                <span><i class="fas fa-bullhorn"></i> Comunicação</span>
+                                <strong>10%</strong>
+                            </div>
+                            <div
+                                style="background: var(--color-gray-200); height: 8px; border-radius: 4px; overflow: hidden;">
+                                <div style="background: var(--color-primary); width: 10%; height: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="flex justify-between items-center" style="margin-bottom: 0.5rem;">
+                                <span><i class="fas fa-graduation-cap"></i> Formação</span>
+                                <strong>5%</strong>
+                            </div>
+                            <div
+                                style="background: var(--color-gray-200); height: 8px; border-radius: 4px; overflow: hidden;">
+                                <div style="background: var(--color-primary); width: 5%; height: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="flex justify-between items-center" style="margin-bottom: 0.5rem;">
+                                <span><i class="fas fa-ellipsis-h"></i> Outros</span>
+                                <strong>5%</strong>
+                            </div>
+                            <div
+                                style="background: var(--color-gray-200); height: 8px; border-radius: 4px; overflow: hidden;">
+                                <div style="background: var(--color-primary); width: 5%; height: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Assemblies Section -->
+    <section class="section section-bg-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Assembleias de Prestação de Contas</h2>
+                <p class="section-subtitle">Participação e aprovação dos filiados</p>
+            </div>
+
+            <div class="grid grid-cols-2">
+                <!-- Next Assembly -->
+                <div class="card" style="border-left: 4px solid var(--color-accent);">
+                    <div class="card-content">
+                        <div class="flex justify-between items-start gap-2">
+                            <h3 style="color: var(--color-accent); margin-bottom: 0.5rem;">
+                                <i class="fas fa-calendar-day"></i> Próxima Assembleia
+                            </h3>
+                            <span class="badge badge-accent">Agendada</span>
+                        </div>
+                        <h4 style="font-size: 1.25rem; margin-bottom: 1rem;">Prestação de Contas 2026</h4>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;">
+                                <i class="fas fa-calendar"></i> <strong>Data:</strong> Abril de 2026
+                            </li>
+                            <li style="margin-bottom: 0.5rem;">
+                                <i class="fas fa-map-marker-alt"></i> <strong>Local:</strong> A definir
+                            </li>
+                        </ul>
+                        <p
+                            style="margin-top: 1rem; padding: 1rem; background: var(--color-gray-50); border-radius: 0.5rem;">
+                            <strong>Pauta:</strong> Apresentação e aprovação do balanço financeiro de 2025
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Past Assembly -->
+                <div class="card">
+                    <div class="card-content">
+                        <div class="flex justify-between items-start gap-2">
+                            <h3 style="color: var(--color-primary); margin-bottom: 0.5rem;">
+                                <i class="fas fa-check-circle"></i> Última Assembleia
+                            </h3>
+                            <span class="badge badge-success">Aprovada</span>
+                        </div>
+                        <h4 style="font-size: 1.25rem; margin-bottom: 1rem;">Prestação de Contas 2025</h4>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;">
+                                <i class="fas fa-calendar"></i> <strong>Data:</strong> Julho de 2023
+                            </li>
+                            <li style="margin-bottom: 0.5rem;">
+                                <i class="fas fa-users"></i> <strong>Participantes:</strong> 120 filiados
+                            </li>
+                        </ul>
+                        <p
+                            style="margin-top: 1rem; padding: 1rem; background: var(--color-success-light); border-radius: 0.5rem; border-left: 4px solid var(--color-success);">
+                            <strong>Resultado:</strong> Contas aprovadas por unanimidade
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents Section -->
+    <section class="section section-bg-white">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Outros Documentos</h2>
+            </div>
+
+            <div class="grid grid-cols-3">
+                <!-- Document 1 -->
+                <div class="card">
+                    <div class="card-content text-center">
+                        <i class="fas fa-file-alt"
+                            style="font-size: 3rem; color: var(--color-primary); margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">Orçamento 2026</h3>
+                        <p class="card-text">Planejamento orçamentário para o exercício de 2026</p>
+                        <a href="documents/orcamento-2026.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i> Baixar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Document 2 -->
+                <div class="card">
+                    <div class="card-content text-center">
+                        <i class="fas fa-file-invoice"
+                            style="font-size: 3rem; color: var(--color-primary); margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">Relatório de Atividades</h3>
+                        <p class="card-text">Resumo das atividades e conquistas do sindicato</p>
+                        <a href="documents/relatorio-atividades.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i> Baixar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Document 3 -->
+                <div class="card">
+                    <div class="card-content text-center">
+                        <i class="fas fa-file-contract"
+                            style="font-size: 3rem; color: var(--color-primary); margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">Atas de Assembleias</h3>
+                        <p class="card-text">Atas das assembleias de prestação de contas</p>
+                        <a href="documents/atas-assembleias.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i> Baixar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-bg-gray">
+        <div class="container">
+            <div class="card"
+                style="background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary)); color: white;">
+                <div class="card-content text-center">
+                    <h2 style="color: white; margin-bottom: 1rem;">
+                        <i class="fas fa-question-circle"></i> Dúvidas sobre as Finanças?
+                    </h2>
+                    <p style="font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.95;">
+                        Nossa tesouraria está à disposição para esclarecer qualquer dúvida sobre a gestão financeira do
+                        sindicato.
+                    </p>
+                    <div class="flex gap-4 justify-center">
+                        <a href="contato.html" class="btn btn-accent btn-lg">
+                            <i class="fas fa-envelope"></i> Entre em Contato
+                        </a>
+                        <a href="tel:+554832243868" class="btn btn-secondary btn-lg">
+                            <i class="fas fa-phone"></i> (48) 3224-3868
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SINTAEMA/SC</h3>
+                    <p>Sindicato dos Trabalhadores em Água, Esgoto e Meio Ambiente de Santa Catarina</p>
+                    <p style="margin-top: 1rem; font-style: italic;">"Água é vida, privatizá-la é crime"</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Mauro Ramos, 502 - Centro</li>
+                        <li>Florianópolis/SC - CEP: 88020-301</li>
+                        <li><i class="fas fa-phone"></i> (48) 3224-3868</li>
+                        <li><i class="fas fa-envelope"></i> secretaria@sintaema.org.br</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Horários de Atendimento</h3>
+                    <ul>
+                        <li><strong>Sindicato:</strong></li>
+                        <li>Segunda a Sexta</li>
+                        <li>8h às 12h - 14h às 18h</li>
+                        <li style="margin-top: 1rem;"><strong>Plantão Advogados:</strong></li>
+                        <li>Segundas e Quartas, 14h às 17h</li>
+                        <li>(mediante agendamento)</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="sobre.html">Sobre o SINTAEMA</a></li>
+                        <li><a href="juridico.html">Assessoria Jurídica</a></li>
+                        <li><a href="filiacao.html">Filie-se</a></li>
+                        <li><a href="financas.html">Prestação de Contas</a></li>
+                        <li><a href="campanhas.html">Campanhas Salariais</a></li>
+                        <li><a href="contato.html">Fale Conosco</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/sintaema_sc" target="_blank" rel="noopener" class="social-link"
+                    aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com.br/sintaema1" target="_blank" rel="noopener" class="social-link"
+                    aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 SINTAEMA/SC - Todos os direitos reservados</p>
+                <p>CNPJ: 83.566.729/0001-57</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

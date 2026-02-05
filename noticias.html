@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Notícias do SINTAEMA/SC - Acompanhe as últimas novidades do sindicato">
+    <title>Notícias - SINTAEMA/SC</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="flex justify-between items-center">
+                    <div class="flex gap-4 items-center">
+                        <a href="tel:+554832243868" class="flex items-center gap-2">
+                            <i class="fas fa-phone"></i>
+                            <span>(48) 3224-3868</span>
+                        </a>
+                        <a href="mailto:secretaria@sintaema.org.br" class="flex items-center gap-2">
+                            <i class="fas fa-envelope"></i>
+                            <span class="hidden-mobile">secretaria@sintaema.org.br</span>
+                        </a>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/sintaema_sc" target="_blank" rel="noopener"
+                            aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com.br/sintaema1" target="_blank" rel="noopener"
+                            aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="container">
+                <div class="flex justify-between items-center">
+                    <div class="logo">
+                        <a href="index.html">SINTAEMA/SC</a>
+                    </div>
+
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+                    <nav>
+                        <ul class="nav-menu" id="navMenu">
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="sobre.html">Sobre</a></li>
+                            <li><a href="juridico.html">Jurídico</a></li>
+                            <li><a href="noticias.html" class="active">Notícias</a></li>
+                            <li><a href="midia.html">Mídia</a></li>
+                            <li><a href="campanhas.html">Campanhas</a></li>
+                            <li><a href="financas.html">Finanças</a></li>
+                            <li><a href="filiacao.html">Filie-se</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 4rem 0;">
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title" style="font-size: 2.5rem;">Notícias</h1>
+                <p class="hero-subtitle">Fique por dentro das novidades e acontecimentos do SINTAEMA</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="section section-bg-white" style="padding: 2rem 0;">
+        <div class="container">
+            <div class="flex justify-between items-center gap-4" style="flex-wrap: wrap;">
+                <!-- Search -->
+                <div style="flex: 1; min-width: 300px;">
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <div style="position: relative;">
+                            <input type="text" id="searchNews" class="form-input" placeholder="Buscar notícias..."
+                                style="padding-left: 2.5rem;">
+                            <i class="fas fa-search"
+                                style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--color-gray-400);"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Filter -->
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <button class="btn btn-primary filter-btn active" data-category="all">Todas</button>
+                    <button class="btn btn-secondary filter-btn" data-category="noticias">Notícias</button>
+                    <button class="btn btn-secondary filter-btn" data-category="campanhas">Campanhas</button>
+                    <button class="btn btn-secondary filter-btn" data-category="juridico">Jurídico</button>
+                    <button class="btn btn-secondary filter-btn" data-category="eventos">Eventos</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Grid Section -->
+    <section class="section section-bg-gray">
+        <div class="container">
+            <div class="grid grid-cols-3" id="newsGrid">
+                <!-- News Article 1 -->
+                <article class="card news-item" data-category="noticias">
+                    <img src="images/news/Sintaeman presente no curso internacional.png" alt="Curso CTB"
+                        class="card-image">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span><i class="far fa-calendar"></i> 29 de Janeiro, 2026</span>
+                            <span class="badge badge-primary">Notícias</span>
+                        </div>
+                        <h3 class="card-title">Sintaema presente no curso internacional de formação a CTB</h3>
+                        <p class="card-text">
+                            Representantes do SINTAEMA participaram do curso internacional de formação promovido pela
+                            Central dos Trabalhadores e Trabalhadoras do Brasil (CTB), fortalecendo a capacitação
+                            sindical.
+                        </p>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Leia Mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- News Article 2 -->
+                <article class="card news-item" data-category="campanhas">
+                    <img src="images/news/Trabalhadores e trabalhadoras da AEGEA.png" alt="AEGEA" class="card-image">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span><i class="far fa-calendar"></i> 29 de Janeiro, 2026</span>
+                            <span class="badge badge-accent">Campanhas</span>
+                        </div>
+                        <h3 class="card-title">Trabalhadores e trabalhadoras da AEGEA: é hora de decidir juntos!</h3>
+                        <p class="card-text">
+                            Convocação para assembleia dos trabalhadores da AEGEA para decisões importantes sobre
+                            o futuro da categoria e reivindicações salariais.
+                        </p>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Leia Mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- News Article 3 -->
+                <article class="card news-item" data-category="noticias">
+                    <img src="images/news/Sintaema participa de curso internacional de formação da CTB.jpeg"
+                        alt="Formação CTB" class="card-image">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span><i class="far fa-calendar"></i> 27 de Janeiro, 2026</span>
+                            <span class="badge badge-primary">Notícias</span>
+                        </div>
+                        <h3 class="card-title">Sintaema participa de curso internacional de formação da CTB</h3>
+                        <p class="card-text">
+                            Dirigentes sindicais participam de formação internacional sobre direitos trabalhistas
+                            e estratégias de mobilização sindical.
+                        </p>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Leia Mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- News Article 4 -->
+                <article class="card news-item" data-category="noticias">
+                    <img src="images/news/imposto-renda.jpg" alt="Redução do Imposto de Renda" class="card-image">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span><i class="far fa-calendar"></i> 26 de Janeiro, 2026</span>
+                            <span class="badge badge-primary">Notícias</span>
+                        </div>
+                        <h3 class="card-title">Novas regras do imposto de renda ampliam justiça tributária no Brasil
+                        </h3>
+                        <p class="card-text">
+                            Entenda as mudanças nas regras do imposto de renda e como elas afetam os trabalhadores
+                            do setor de saneamento.
+                        </p>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Leia Mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- News Article 5 -->
+                <article class="card news-item" data-category="campanhas">
+                    <img src="images/news/placeholder-5.jpg" alt="Pomerwasser" class="card-image">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span><i class="far fa-calendar"></i> 26 de Janeiro, 2026</span>
+                            <span class="badge badge-accent">Campanhas</span>
+                        </div>
+                        <h3 class="card-title">Pomerwasser | Campanha Salarial 2026 e PLR: Participe das assembleias
+                        </h3>
+                        <p class="card-text">
+                            Convocação para assembleias sobre campanha salarial 2026 e Participação nos Lucros e
+                            Resultados (PLR) da Pomerwasser.
+                        </p>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Leia Mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- News Article 6 -->
+                <article class="card news-item" data-category="noticias">
+                    <img src="images/news/placeholder-6.jpg" alt="CASAN" class="card-image">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span><i class="far fa-calendar"></i> 26 de Janeiro, 2026</span>
+                            <span class="badge badge-primary">Notícias</span>
+                        </div>
+                        <h3 class="card-title">SINTAEMA e Giovana Mondardo debatem CASAN pública e direitos dos
+                            trabalhadores</h3>
+                        <p class="card-text">
+                            Debate sobre a importância da CASAN pública e os direitos dos trabalhadores do setor
+                            de saneamento em Santa Catarina.
+                        </p>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Leia Mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- News Article 7 -->
+                <article class="card news-item" data-category="eventos">
+                    <img src="images/news/placeholder-7.jpg" alt="Saneamento Público" class="card-image">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span><i class="far fa-calendar"></i> 14 de Agosto, 2023</span>
+                            <span class="badge badge-gray">Eventos</span>
+                        </div>
+                        <h3 class="card-title">Dia nacional de luta em defesa do saneamento público</h3>
+                        <p class="card-text">
+                            Mobilização nacional em defesa do saneamento público e contra a privatização dos
+                            serviços essenciais de água e esgoto.
+                        </p>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Leia Mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- News Article 8 -->
+                <article class="card news-item" data-category="eventos">
+                    <img src="images/news/placeholder-8.jpg" alt="Assembleias" class="card-image">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span><i class="far fa-calendar"></i> 10 de Julho, 2023</span>
+                            <span class="badge badge-gray">Eventos</span>
+                        </div>
+                        <h3 class="card-title">Calendário | Assembleias de Prestação de Contas</h3>
+                        <p class="card-text">
+                            Confira o calendário completo das assembleias regionais de prestação de contas do
+                            SINTAEMA em todo o estado de Santa Catarina.
+                        </p>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Leia Mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- News Article 9 -->
+                <article class="card news-item" data-category="juridico">
+                    <img src="images/news/placeholder-9.jpg" alt="Direitos" class="card-image">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span><i class="far fa-calendar"></i> 15 de Junho, 2023</span>
+                            <span class="badge badge-primary">Jurídico</span>
+                        </div>
+                        <h3 class="card-title">Conquistas jurídicas garantem direitos dos trabalhadores</h3>
+                        <p class="card-text">
+                            Assessoria jurídica do SINTAEMA conquista importantes vitórias na justiça do trabalho,
+                            garantindo direitos e benefícios para a categoria.
+                        </p>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Leia Mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="text-center mt-8">
+                <div style="display: inline-flex; gap: 0.5rem; align-items: center;">
+                    <button class="btn btn-secondary" disabled>
+                        <i class="fas fa-chevron-left"></i> Anterior
+                    </button>
+                    <button class="btn btn-primary">1</button>
+                    <button class="btn btn-secondary">2</button>
+                    <button class="btn btn-secondary">3</button>
+                    <button class="btn btn-secondary">
+                        Próxima <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section section-bg-white">
+        <div class="container">
+            <div class="card"
+                style="background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary)); color: white;">
+                <div class="card-content text-center">
+                    <h2 style="color: white; margin-bottom: 1rem;">
+                        <i class="fas fa-envelope"></i> Receba Nossas Notícias
+                    </h2>
+                    <p style="font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.95;">
+                        Cadastre-se para receber as últimas notícias e informações do SINTAEMA diretamente no seu e-mail
+                    </p>
+                    <form id="newsletterForm" style="max-width: 600px; margin: 0 auto; display: flex; gap: 1rem;">
+                        <input type="email" placeholder="Seu e-mail" class="form-input" style="flex: 1;">
+                        <button type="submit" class="btn btn-accent">
+                            <i class="fas fa-paper-plane"></i> Inscrever-se
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SINTAEMA/SC</h3>
+                    <p>Sindicato dos Trabalhadores em Água, Esgoto e Meio Ambiente de Santa Catarina</p>
+                    <p style="margin-top: 1rem; font-style: italic;">"Água é vida, privatizá-la é crime"</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Mauro Ramos, 502 - Centro</li>
+                        <li>Florianópolis/SC - CEP: 88020-301</li>
+                        <li><i class="fas fa-phone"></i> (48) 3224-3868</li>
+                        <li><i class="fas fa-envelope"></i> secretaria@sintaema.org.br</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Horários de Atendimento</h3>
+                    <ul>
+                        <li><strong>Sindicato:</strong></li>
+                        <li>Segunda a Sexta</li>
+                        <li>8h às 12h - 14h às 18h</li>
+                        <li style="margin-top: 1rem;"><strong>Plantão Advogados:</strong></li>
+                        <li>Segundas e Quartas, 14h às 17h</li>
+                        <li>(mediante agendamento)</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="sobre.html">Sobre o SINTAEMA</a></li>
+                        <li><a href="juridico.html">Assessoria Jurídica</a></li>
+                        <li><a href="filiacao.html">Filie-se</a></li>
+                        <li><a href="financas.html">Prestação de Contas</a></li>
+                        <li><a href="campanhas.html">Campanhas Salariais</a></li>
+                        <li><a href="contato.html">Fale Conosco</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/sintaema_sc" target="_blank" rel="noopener" class="social-link"
+                    aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com.br/sintaema1" target="_blank" rel="noopener" class="social-link"
+                    aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 SINTAEMA/SC - Todos os direitos reservados</p>
+                <p>CNPJ: 83.566.729/0001-57</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Simple news filtering
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const newsItems = document.querySelectorAll('.news-item');
+            const searchInput = document.getElementById('searchNews');
+
+            // Filter by category
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const category = this.dataset.category;
+
+                    // Update active button
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('active', 'btn-primary');
+                        btn.classList.add('btn-secondary');
+                    });
+                    this.classList.remove('btn-secondary');
+                    this.classList.add('btn-primary', 'active');
+
+                    // Filter news items
+                    newsItems.forEach(item => {
+                        if (category === 'all' || item.dataset.category === category) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Search functionality
+            if (searchInput) {
+                searchInput.addEventListener('input', function () {
+                    const searchTerm = this.value.toLowerCase();
+
+                    newsItems.forEach(item => {
+                        const title = item.querySelector('.card-title').textContent.toLowerCase();
+                        const text = item.querySelector('.card-text').textContent.toLowerCase();
+
+                        if (title.includes(searchTerm) || text.includes(searchTerm)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

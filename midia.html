@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Galeria de Fotos e Vídeos do SINTAEMA/SC - Acompanhe nossas atividades e mobilizações">
+    <title>Mídia - SINTAEMA/SC</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="flex justify-between items-center">
+                    <div class="flex gap-4 items-center">
+                        <a href="tel:+554832243868" class="flex items-center gap-2">
+                            <i class="fas fa-phone"></i>
+                            <span>(48) 3224-3868</span>
+                        </a>
+                        <a href="mailto:secretaria@sintaema.org.br" class="flex items-center gap-2">
+                            <i class="fas fa-envelope"></i>
+                            <span class="hidden-mobile">secretaria@sintaema.org.br</span>
+                        </a>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/sintaema_sc" target="_blank" rel="noopener"
+                            aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com.br/sintaema1" target="_blank" rel="noopener"
+                            aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="container">
+                <div class="flex justify-between items-center">
+                    <div class="logo">
+                        <a href="index.html">SINTAEMA/SC</a>
+                    </div>
+
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+                    <nav>
+                        <ul class="nav-menu" id="navMenu">
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="sobre.html">Sobre</a></li>
+                            <li><a href="juridico.html">Jurídico</a></li>
+                            <li><a href="noticias.html">Notícias</a></li>
+                            <li><a href="midia.html" class="active">Mídia</a></li>
+                            <li><a href="campanhas.html">Campanhas</a></li>
+                            <li><a href="financas.html">Finanças</a></li>
+                            <li><a href="filiacao.html">Filie-se</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 4rem 0;">
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title" style="font-size: 2.5rem;">Galeria de Mídia</h1>
+                <p class="hero-subtitle">Fotos e vídeos das nossas atividades, mobilizações e conquistas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <section class="section section-bg-white" style="padding: 2rem 0;">
+        <div class="container">
+            <div class="flex justify-center gap-2" style="flex-wrap: wrap;">
+                <button class="btn btn-primary media-filter active" data-type="all">
+                    <i class="fas fa-th"></i> Todos
+                </button>
+                <button class="btn btn-secondary media-filter" data-type="photos">
+                    <i class="fas fa-images"></i> Fotos
+                </button>
+                <button class="btn btn-secondary media-filter" data-type="videos">
+                    <i class="fas fa-video"></i> Vídeos
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section class="section section-bg-gray media-section" data-type="videos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-video"></i> Vídeos
+                </h2>
+                <p class="section-subtitle">Confira nossos vídeos no YouTube</p>
+            </div>
+
+            <div class="text-center" style="padding: 3rem 0;">
+                <i class="fab fa-youtube" style="font-size: 5rem; color: #FF0000; margin-bottom: 2rem;"></i>
+                <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--color-primary-dark);">
+                    Confira nossos vídeos no YouTube
+                </h3>
+                <p
+                    style="font-size: 1.125rem; color: var(--color-gray-600); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Acompanhe assembleias, eventos, manifestações e muito mais em nosso canal oficial no YouTube.
+                </p>
+                <a href="https://www.youtube.com.br/sintaema1" target="_blank" rel="noopener"
+                    class="btn btn-accent btn-lg">
+                    <i class="fab fa-youtube"></i> Acessar Canal do YouTube
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Photos Section -->
+    <section class="section section-bg-white media-section" data-type="photos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-images"></i> Galeria de Fotos
+                </h2>
+                <p class="section-subtitle">Momentos importantes da nossa luta</p>
+            </div>
+
+            <!-- Photo Album 1: Assembleia Geral -->
+            <div style="margin-bottom: 4rem;">
+                <h3
+                    style="color: var(--color-primary); margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--color-primary);">
+                    <i class="fas fa-folder-open"></i> Assembleia geral 21/02/22
+                </h3>
+                <div class="grid grid-cols-4">
+                    <div class="card" style="cursor: pointer;">
+                        <img src="images/gallery/Assembleia regional.jpg" alt="Assembleia geral 21/02/22"
+                            class="card-image">
+                        <div class="card-content">
+                            <p style="font-size: 0.875rem; color: var(--color-gray-600);">
+                                <i class="far fa-calendar"></i> 21 de Fevereiro, 2022
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo Album 2: Paralisações -->
+            <div style="margin-bottom: 4rem;">
+                <h3
+                    style="color: var(--color-primary); margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--color-primary);">
+                    <i class="fas fa-folder-open"></i> Paralisações julho 2021
+                </h3>
+                <div class="grid grid-cols-4">
+                    <div class="card" style="cursor: pointer;">
+                        <img src="images/gallery/Paralisação.jpg" alt="Paralisações julho 2021" class="card-image">
+                        <div class="card-content">
+                            <p style="font-size: 0.875rem; color: var(--color-gray-600);">
+                                <i class="far fa-calendar"></i> Julho, 2021
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo Album 3: Campanha Salarial -->
+            <div style="margin-bottom: 4rem;">
+                <h3
+                    style="color: var(--color-primary); margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--color-primary);">
+                    <i class="fas fa-folder-open"></i> Campanha salarial 2021
+                </h3>
+                <div class="grid grid-cols-4">
+                    <div class="card" style="cursor: pointer;">
+                        <img src="images/gallery/Campanha salarial.jpeg" alt="Campanha salarial 2021"
+                            class="card-image">
+                        <div class="card-content">
+                            <p style="font-size: 0.875rem; color: var(--color-gray-600);">
+                                <i class="far fa-calendar"></i> 2021
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="section section-bg-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Siga-nos nas Redes Sociais</h2>
+                <p class="section-subtitle">Acompanhe nossas atividades em tempo real</p>
+            </div>
+
+            <div class="grid grid-cols-3">
+                <!-- Instagram -->
+                <div class="card text-center">
+                    <div class="card-content">
+                        <i class="fab fa-instagram" style="font-size: 4rem; color: #E4405F; margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">Instagram</h3>
+                        <p class="card-text" style="margin-bottom: 1.5rem;">
+                            Fotos e stories das nossas atividades
+                        </p>
+                        <a href="https://www.instagram.com/sintaema_sc" target="_blank" rel="noopener"
+                            class="btn btn-primary btn-lg">
+                            <i class="fab fa-instagram"></i> Seguir
+                        </a>
+                    </div>
+                </div>
+
+                <!-- YouTube -->
+                <div class="card text-center">
+                    <div class="card-content">
+                        <i class="fab fa-youtube" style="font-size: 4rem; color: #FF0000; margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">YouTube</h3>
+                        <p class="card-text" style="margin-bottom: 1.5rem;">
+                            Vídeos de assembleias e eventos
+                        </p>
+                        <a href="https://www.youtube.com.br/sintaema1" target="_blank" rel="noopener"
+                            class="btn btn-primary btn-lg">
+                            <i class="fab fa-youtube"></i> Inscrever-se
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SINTAEMA/SC</h3>
+                    <p>Sindicato dos Trabalhadores em Água, Esgoto e Meio Ambiente de Santa Catarina</p>
+                    <p style="margin-top: 1rem; font-style: italic;">"Água é vida, privatizá-la é crime"</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Mauro Ramos, 502 - Centro</li>
+                        <li>Florianópolis/SC - CEP: 88020-301</li>
+                        <li><i class="fas fa-phone"></i> (48) 3224-3868</li>
+                        <li><i class="fas fa-envelope"></i> secretaria@sintaema.org.br</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Horários de Atendimento</h3>
+                    <ul>
+                        <li><strong>Sindicato:</strong></li>
+                        <li>Segunda a Sexta</li>
+                        <li>8h às 12h - 14h às 18h</li>
+                        <li style="margin-top: 1rem;"><strong>Plantão Advogados:</strong></li>
+                        <li>Segundas e Quartas, 14h às 17h</li>
+                        <li>(mediante agendamento)</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="sobre.html">Sobre o SINTAEMA</a></li>
+                        <li><a href="juridico.html">Assessoria Jurídica</a></li>
+                        <li><a href="filiacao.html">Filie-se</a></li>
+                        <li><a href="financas.html">Prestação de Contas</a></li>
+                        <li><a href="campanhas.html">Campanhas Salariais</a></li>
+                        <li><a href="contato.html">Fale Conosco</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/sintaema_sc" target="_blank" rel="noopener" class="social-link"
+                    aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com.br/sintaema1" target="_blank" rel="noopener" class="social-link"
+                    aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 SINTAEMA/SC - Todos os direitos reservados</p>
+                <p>CNPJ: 83.566.729/0001-57</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Media filter functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterButtons = document.querySelectorAll('.media-filter');
+            const mediaSections = document.querySelectorAll('.media-section');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const filterType = this.dataset.type;
+
+                    // Update active button
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('active', 'btn-primary');
+                        btn.classList.add('btn-secondary');
+                    });
+                    this.classList.remove('btn-secondary');
+                    this.classList.add('btn-primary', 'active');
+
+                    // Show/hide sections
+                    mediaSections.forEach(section => {
+                        if (filterType === 'all' || section.dataset.type === filterType) {
+                            section.style.display = 'block';
+                        } else {
+                            section.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
