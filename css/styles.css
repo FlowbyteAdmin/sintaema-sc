@@ -335,22 +335,33 @@ p {
 }
 
 .logo {
-  font-size: var(--font-size-3xl);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-white);
-  letter-spacing: 1px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
   transition: all var(--transition-fast);
 }
 
 .logo a {
-  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  transition: all var(--transition-fast);
 }
 
-.logo a:hover {
-  color: var(--color-white);
-  text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
-  transform: scale(1.02);
+.logo img {
+  height: 50px;
+  width: auto;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+  transition: all var(--transition-fast);
+}
+
+.logo a:hover img {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
+  transform: scale(1.05);
+}
+
+@media (max-width: 767px) {
+  .logo img {
+    height: 40px;
+  }
 }
 
 .nav-menu {
